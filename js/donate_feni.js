@@ -1,19 +1,17 @@
 document.getElementById("donateFeni").addEventListener("click", function () {
   // getting input value by id
   const feniDonateAmount = getInputValuById("feniDonateInput");
-  console.log(feniDonateAmount);
 
-  // input validation amount validationInput(parseAmount)
-  validationInput(feniDonateAmount);
+  if (isNaN(feniDonateAmount) || feniDonateAmount <= 0) {
+    alert("⚠️Ivalid Donate Amount⚠️. Please Enter a Valid Input Amount");
+    return;
+  }
 
   // feni current blance
   const feniBlance = getInnerTextById("feni-amount");
-  console.log(feniBlance);
 
   //Get Main Blance Amount
   const mainBlance = getInnerTextById("main-blance");
-  console.log(mainBlance);
-
   // Blance validation
   donateBlanceValidation(mainBlance, feniDonateAmount);
 

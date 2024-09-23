@@ -4,13 +4,6 @@ function getInputValuById(id) {
   return value;
 }
 
-// Input validation for donate amount input
-function validationInput(parseAmount) {
-  if (isNaN(parseAmount) || parseAmount <= 0) {
-    return alert("⚠️Ivalid Donate Amount⚠️. Please Enter a Valid Input Amount");
-  }
-}
-
 // get innerText by id
 function getInnerTextById(id) {
   const innerTextValue = parseFloat(document.getElementById(id).innerText);
@@ -75,4 +68,28 @@ function addDonateHistory(donateBlance, place) {
   const historySection = document.getElementById("history");
 
   historySection.insertBefore(donateHistory, historySection.firstChild);
+}
+
+// remove button style id1 for style button and style remove button
+function buttonStyleAddById(id1, id2) {
+  document
+    .getElementById(id1)
+    .classList.add(
+      "text-white",
+      "font-semibold",
+      "bg-gradient-to-r",
+      "from-blue-500",
+      "to-purple-600"
+    );
+  document.getElementById(id1).classList.add("text-gray-600");
+
+  document
+    .getElementById(id2)
+    .classList.remove(
+      "text-white",
+      "font-semibold",
+      "bg-gradient-to-r",
+      "from-blue-500",
+      "to-purple-600"
+    );
 }

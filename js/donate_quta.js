@@ -2,9 +2,11 @@ document.getElementById("donateQuta").addEventListener("click", function () {
   // getting input value by id
   const qutaDonateAmount = getInputValuById("qutaDonateInput");
   console.log(qutaDonateAmount);
-
-  // input validation amount validationInput(parseAmount)
-  validationInput(qutaDonateAmount);
+  // validate input amount
+  if (isNaN(qutaDonateAmount) || qutaDonateAmount <= 0) {
+    alert("⚠️Ivalid Donate Amount⚠️. Please Enter a Valid Input Amount");
+    return;
+  }
 
   // feni current blance
   const qutaBlance = getInnerTextById("quta-amount");
