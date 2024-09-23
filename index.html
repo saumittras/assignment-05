@@ -198,8 +198,8 @@
             <div class="flex w-full lg:w-6/12 flex-col gap-5">
               <div>
                 <p class="flex space-x-1">
-                  <img src="images/coin.png" alt="" /><span id="amount">
-                    0</span
+                  <img src="images/coin.png" alt="" /><span id="feni-amount">
+                    1000</span
                   >
                   BDT
                 </p>
@@ -221,12 +221,16 @@
               </p>
 
               <input
+                id="feniDonateInput"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
 
-              <button class="btn bg-primary_button_bg btn-md lg:btn-lg">
+              <button
+                id="donateFeni"
+                class="btn bg-primary_button_bg btn-md lg:btn-lg"
+              >
                 Donate Now
               </button>
             </div>
