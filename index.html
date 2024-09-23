@@ -146,7 +146,9 @@
             <div class="flex w-full lg:w-6/12 flex-col gap-5">
               <div>
                 <p class="flex space-x-1">
-                  <img src="images/coin.png" alt="" /><span id="amount">
+                  <img src="images/coin.png" alt="" /><span
+                    id="noyakhali-amount"
+                  >
                     0</span
                   >
                   BDT
@@ -167,14 +169,15 @@
               </p>
 
               <input
+                id="noyakhaliAmount"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
 
               <button
+                id="donateNoyakhali"
                 class="btn bg-primary_button_bg btn-md lg:btn-lg"
-                onclick="my_modal_5.showModal()"
               >
                 Donate Now
               </button>
@@ -285,8 +288,10 @@
         </div>
       </section>
       <!-- Donate Section end from here -->
-      <section></section>
+      <section id="history"></section>
     </main>
     <footer class="menu-box mt-8 w-full bg-[#F9F7F3] h-24"></footer>
+    <script src="js/utility.js"></script>
+    <script src="js/donate_nk.js"></script>
   </body>
 </html>
