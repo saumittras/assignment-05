@@ -70,26 +70,15 @@ function addDonateHistory(donateBlance, place) {
   historySection.insertBefore(donateHistory, historySection.firstChild);
 }
 
-// remove button style id1 for style button and style remove button
+// togle button by two ID
 function buttonStyleAddById(id1, id2) {
-  document
-    .getElementById(id1)
-    .classList.add(
-      "text-white",
-      "font-semibold",
-      "bg-gradient-to-r",
-      "from-blue-500",
-      "to-purple-600"
-    );
-  document.getElementById(id1).classList.add("text-gray-600");
+  document.getElementById(id2).classList.add("font-semibold", "bg-[#B4F461]");
+  document.getElementById(id1).classList.add("font-medium", "bg-transparent");
 
   document
     .getElementById(id2)
-    .classList.remove(
-      "text-white",
-      "font-semibold",
-      "bg-gradient-to-r",
-      "from-blue-500",
-      "to-purple-600"
-    );
+    .classList.remove("font-medium", "bg-transparent");
+  document
+    .getElementById(id1)
+    .classList.remove("font-semibold", "bg-[#B4F461]");
 }
