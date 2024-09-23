@@ -54,12 +54,63 @@
     ></script>
 
     <!-- Internal CSS added here -->
-    <style></style>
+    <style>
+      #nav-bar {
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        /* From https://css.glass */
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.81);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.3px);
+        -webkit-backdrop-filter: blur(5.3px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    </style>
     <title>Assignment-05</title>
   </head>
   <body class="font-primary_font">
-    <header>
-      <nav></nav>
+    <header id="nav-bar">
+      <div class="menu-box w-full bg-[#F9F7F3] h-24">
+        <nav
+          class="flex justify-between items-center w-11/12 lg:w-10/12 mx-auto sticky py-5"
+        >
+          <button
+            class="btn lg:px-8 bg-primary_button_bg text-button_text_color"
+          >
+            <a href="/blog.html">Blog</a>
+          </button>
+          <div
+            class="logo flex flex-row gap-2 lg:gap-4 justify-center items-center"
+          >
+            <img class="w-12 h-12" src="images/logo.png" alt="" />
+            <h1 class="lg:inline-block text-xl font-semibold hidden">
+              Donate Bangladesh
+            </h1>
+          </div>
+          <div
+            class="main-blance flex justify-center items-center gap-1 lg:gap-2"
+          >
+            <img src="images/coin.png" alt="" />
+            <h3 id="main-blance">20000</h3>
+            <h3>BDT</h3>
+          </div>
+        </nav>
+      </div>
+      <div class="button flex justify-center py-8 gap-4">
+        <button
+          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lgbtn bg-primary_button_bg text-button_text_color"
+        >
+          Donation
+        </button>
+        <button
+          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lgbtn bg-primary_button_bg text-button_text_color"
+        >
+          History
+        </button>
+      </div>
     </header>
     <main class="w-full bg-white">
       <!-- Donate Section start from here -->
@@ -84,18 +135,7 @@
             </div>
           </dialog>
         </div>
-        <div class="button flex justify-center py-8 gap-4">
-          <button
-            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lgbtn bg-primary_button_bg text-button_text_color"
-          >
-            Donation
-          </button>
-          <button
-            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lgbtn bg-primary_button_bg text-button_text_color"
-          >
-            History
-          </button>
-        </div>
+
         <div class="donation-card space-y-8">
           <!-- Noakhali card section Start from here -->
           <div
