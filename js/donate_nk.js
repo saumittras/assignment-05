@@ -30,6 +30,7 @@ document
       mainBlance - noyakhaliDonateAmount
     ).toFixed(2);
 
-    my_modal_5.showModal();
     // will added a histoy from here
+    my_modal_5.showModal();
+    addDonateHistory(noyakhaliDonateAmount, "Noyakhali");
   });

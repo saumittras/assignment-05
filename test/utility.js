@@ -19,16 +19,6 @@ function addInnerTextById(id, text) {
   document.getElementById(id).innerText = text;
 }
 
-// remove class name by id and ClassName
-function removeClassNameById(id) {
-  const ccc = document.getElementById(id);
-  ccc.classList.remove("hidden");
-}
-// add class name by id and ClassName
-function removeClassNameById(id, className) {
-  document.getElementById(id).classList.add(className);
-}
-
 // remove button style id1 for style button and style remove button
 function buttonStyleAddById(id1, id2) {
   document
