@@ -56,17 +56,40 @@
     <style></style>
     <title>Blog Page</title>
   </head>
-  <body>
-    <div class="border w-10/12 mx-auto rounded-lg bg-white border-gray-300">
-      <div class="p-8">
-        <h1 class="text-xl font-bold text-[rgb(17,17,17)]">
-          ${balance}Taka is Donated for ${place} Bangladesh
-        </h1>
-        <p class="text-base text-[rgba(17, 17, 17, 0.7)] font-light">
-          ${newDateTime} hello
-        </p>
+  <body class="font-primary_font">
+    <header id="nav-bar">
+      <div class="menu-box w-full bg-[#F9F7F3] h-24">
+        <nav
+          class="flex justify-between items-center w-11/12 lg:w-10/12 mx-auto sticky py-5"
+        >
+          <button
+            class="btn lg:px-8 bg-primary_button_bg text-button_text_color"
+          >
+            <a href="blog.html">Blog</a>
+          </button>
+          <div
+            class="logo flex flex-row gap-2 lg:gap-4 justify-center items-center"
+          >
+            <img class="w-12 h-12" src="images/logo.png" alt="" />
+            <h1 class="lg:inline-block text-xl font-semibold hidden">
+              Donate Bangladesh
+            </h1>
+          </div>
+          <div
+            class="main-blance flex justify-center items-center gap-1 lg:gap-2"
+          >
+            <img src="images/coin.png" alt="" />
+            <h3 id="main-blance">20000</h3>
+            <h3>BDT</h3>
+          </div>
+        </nav>
       </div>
-    </div>
-    <script></script>
+    </header>
+
+    <footer class="menu-box mt-8 w-full bg-[#F9F7F3] h-24"></footer>
+    <script src="js/utility.js"></script>
+    <script src="js/donate_nk.js"></script>
+    <script src="js/donate_feni.js"></script>
+    <script src="js/donate_quta.js"></script>
   </body>
 </html>

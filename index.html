@@ -59,8 +59,7 @@
         position: sticky;
         top: 0;
         overflow: hidden;
-        /* From https://css.glass */
-        /* From https://css.glass */
+
         background: rgba(255, 255, 255, 0.81);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -80,7 +79,7 @@
           <button
             class="btn lg:px-8 bg-primary_button_bg text-button_text_color"
           >
-            <a href="/blog.html">Blog</a>
+            <a href="blog.html">Blog</a>
           </button>
           <div
             class="logo flex flex-row gap-2 lg:gap-4 justify-center items-center"
@@ -254,7 +253,7 @@
             <div class="flex w-full lg:w-6/12 flex-col gap-5">
               <div>
                 <p class="flex space-x-1">
-                  <img src="images/coin.png" alt="" /><span id="amount">
+                  <img src="images/coin.png" alt="" /><span id="quta-amount">
                     0</span
                   >
                   BDT
@@ -278,12 +277,16 @@
               </p>
 
               <input
+                id="qutaDonateInput"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
 
-              <button class="btn bg-primary_button_bg btn-md lg:btn-lg">
+              <button
+                id="donateQuta"
+                class="btn bg-primary_button_bg btn-md lg:btn-lg"
+              >
                 Donate Now
               </button>
             </div>
@@ -298,5 +301,6 @@
     <script src="js/utility.js"></script>
     <script src="js/donate_nk.js"></script>
     <script src="js/donate_feni.js"></script>
+    <script src="js/donate_quta.js"></script>
   </body>
 </html>
