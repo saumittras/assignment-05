@@ -85,13 +85,13 @@
         </nav>
       </div>
     </header>
-    <main class="lg:w-10/12 mx-auto lg:py-8">
+    <main class="w-full text-sm lg:text-base lg:w-10/12 mx-auto lg:py-8">
       <div class="dom">
         <!--A. What is the Document Object Model (DOM)?  -->
         <div class="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" checked="checked" />
           <div class="collapse-title text-xl font-medium">
-            <h2 class="card-title">
+            <h2 class="card-title text-lg ">
               A. What is the Document Object Model (DOM)?
             </h2>
           </div>
@@ -116,7 +116,7 @@
         <div class="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" checked="checked" />
           <div class="collapse-title text-xl font-medium">
-            <h2 class="card-title">
+            <h2 class="card-title text-lg">
               B. How do you select an element from the DOM?
             </h2>
           </div>
@@ -140,27 +140,38 @@
         </div>
 
         <!--C. What is event delegation in the context of the DOM, and why is it useful? -->
-        <div class="collapse collapse-arrow bg-base-200">
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium">
-            <h2 class="card-title">
-              C. What is event delegation in the context of the DOM, and why is
-              it useful?
-            </h2>
-          </div>
-          <div class="collapse-content">
-            <p>
-              There are several methods used to select an element. The selection
-              methods are:
-            </p>
-          </div>
-        </div>
-
-        <!-- How do you manipulate an element's attributes and styles using the DOM? -->
+        
         <div class="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" checked="checked" />
           <div class="collapse-title text-xl font-medium">
-            <h2 class="card-title">
+            <h2 class="card-title text-lg">
+              C. What is event delegation in the context of the DOM, and why is it useful?
+            </h2>
+          </div>
+          <div class="collapse-content">
+            <div class="card bg-base-100 w-full shadow-xl">
+              <div class="card-body">
+                <p>
+                  There are several methods used to select an element. The
+                  selection methods are:
+                </p>
+                <ol class="list-decimal list-inside">
+                  <li>getElementById()</li>
+                  <li>getElementsByClassName()</li>
+                  <li>getElementsByTagName()</li>
+                  <li>querySelector()</li>
+                  <li>querySelectorAll()</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- D. How do you manipulate an element's attributes and styles using the DOM? -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            <h2 class="card-title text-lg">
               D. How do you manipulate an element's attributes and styles using
               the DOM?
             </h2>
@@ -168,7 +179,7 @@
           <div class="collapse-content">
             <div class="card bg-base-100 w-full shadow-xl">
               <div class="card-body">
-                <h2 class="card-title">Manupulating Attributes:</h2>
+                <h2 class="card-title text-lg">Manupulating Attributes:</h2>
             
                 <ol class="list-decimal pl-1 lg:px-10">
                   <li>Step 1:
@@ -214,7 +225,7 @@
                   </li> 
                 </ol>
     
-                <h2 class="card-title"> Manupulating by style property:</h2>
+                <h2 class="card-title text-lg"> Manupulating by style property:</h2>
                 <ol class="list-decimal pl-1 lg:px-10">
                   <li>Setting Style:
                     <ul class="list-disc pl-1 lg:px-5">
