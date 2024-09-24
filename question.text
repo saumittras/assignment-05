@@ -1,0 +1,41 @@
+What is document object model (DOM)?
+the dom is a javascript web document manupulation system, its allowed to access and manupulation the web content , structure and web pages. a dom represent a document as a tree of nodes. the nodes are represent documents elements attributs and text. the key feature of dom are tree structure, languge agnogtic, dynamic manupulation, event handling and modiying content.
+
+How do you select an element from the DOM?
+There are several methode are using for select an element. the selecting methode are
+1. getElementById()
+2. getElementByClassName()
+3. getElementByTagName()
+4. querySelector()
+5. querySelectorAll() 
+
+How do you manipulate an element's attributes and styles using the DOM?
+
+Manupulating Attributes:
+Step 1: Accessing an Element: getElementByClassName() or getElementById() or querySelector()
+example:
+const element = document.getElementById("ID_name");
+step 2: Geting an Attribute: To get an attribute, getAttribute methode is use.
+example: 
+const value = element.getAttribute("attribute-name");
+
+Step 3: Setting an Attribute: setAttribute methode is use for change  an attribute value.
+example: element.setAttribute("attribute-name","NewAttributeValue");
+
+Step 4: Removing an Attribute: removeAtttribute methode is use to remove an attribute.
+example: element.removeAtttribute("attribute-name");
+
+Manupulating Styles: manupulating by style property:
+Setting Style:
+element.style.backgroundColor ="colorName";
+element.style.color ="colorName";
+element.style.fontSize ="value";
+
+RemovingStyle:
+element.style.stylingProperty = "";
+example: element.style.color="";
+
+Adding CSS Classes:
+element.ClassName.add("className);
+element.ClassName.remove("className);
+element.ClassName.toggle("active);

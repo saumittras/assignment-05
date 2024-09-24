@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -85,6 +85,166 @@
         </nav>
       </div>
     </header>
+    <main class="lg:w-10/12 mx-auto lg:py-8">
+      <div class="dom">
+        <!--A. What is the Document Object Model (DOM)?  -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            <h2 class="card-title">
+              A. What is the Document Object Model (DOM)?
+            </h2>
+          </div>
+          <div class="collapse-content">
+            <div class="card bg-base-100 w-full shadow-xl">
+              <div class="card-body">
+                <p>
+                  The DOM is a JavaScript web document manipulation system. It
+                  allows access to and manipulation of web content, structure,
+                  and web pages. A DOM represents a document as a tree of nodes.
+                  The nodes represent the document's elements, attributes, and
+                  text. The key features of the DOM are its tree structure,
+                  language agnostic nature, dynamic manipulation, event
+                  handling, and content modification.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--B.  How do you select an element from the DOM? -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            <h2 class="card-title">
+              B. How do you select an element from the DOM?
+            </h2>
+          </div>
+          <div class="collapse-content">
+            <div class="card bg-base-100 w-full shadow-xl">
+              <div class="card-body">
+                <p>
+                  There are several methods used to select an element. The
+                  selection methods are:
+                </p>
+                <ol class="list-decimal list-inside">
+                  <li>getElementById()</li>
+                  <li>getElementsByClassName()</li>
+                  <li>getElementsByTagName()</li>
+                  <li>querySelector()</li>
+                  <li>querySelectorAll()</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--C. What is event delegation in the context of the DOM, and why is it useful? -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            <h2 class="card-title">
+              C. What is event delegation in the context of the DOM, and why is
+              it useful?
+            </h2>
+          </div>
+          <div class="collapse-content">
+            <p>
+              There are several methods used to select an element. The selection
+              methods are:
+            </p>
+          </div>
+        </div>
+
+        <!-- How do you manipulate an element's attributes and styles using the DOM? -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            <h2 class="card-title">
+              D. How do you manipulate an element's attributes and styles using
+              the DOM?
+            </h2>
+          </div>
+          <div class="collapse-content">
+            <div class="card bg-base-100 w-full shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title">Manupulating Attributes:</h2>
+            
+                <ol class="list-decimal pl-1 lg:px-10">
+                  <li>Step 1:
+                    <ul class="list-disc pl-1 lg:px-5">
+                      <li>Accessing an Element: getElementByClassName() or getElementById() or querySelector()</li>
+                      <ul class="pl-1 lg:px-5">
+                        <li>
+                          <p>> example: const element = document.getElementById("ID_name");</p></li></li>
+                      </ul>
+                    </ul>
+                  </li>
+    
+                  <li>Step 2:
+                    <ul class="list-disc pl-1 lg:px-5">
+                      <li>Geting an Attribute: To get an attribute, getAttribute methode is use.</li>
+                      <ul class="pl-1 lg:px-5">
+                        <li>
+                        <p>>example: const value = element.getAttribute("attribute-name");</p>
+                        </li>
+                      </ul>
+                    </ul>
+                  </li> 
+    
+                  <li>Step 3:
+                    <ul class="list-disc pl-1 lg:px-5">
+                      <li>Setting an Attribute: setAttribute methode is use for change  an attribute value.</li>
+                      <ul class="pl-1 lg:px-5">
+                        <li>
+                          <p>> example: element.setAttribute("attribute-name","NewAttributeValue");</p></li></li>
+                      </ul>
+                    </ul>
+                  </li>
+    
+                  <li>Step 4:
+                    <ul class="list-disc pl-1 lg:px-5">
+                      <li>Removing an Attribute: removeAtttribute methode is use to remove an attribute.</li>
+                      <ul class="pl-1 lg:px-5">
+                        <li>
+                        <p>>example: element.removeAtttribute("attribute-name");</p>
+                        </li>
+                      </ul>
+                    </ul>
+                  </li> 
+                </ol>
+    
+                <h2 class="card-title"> Manupulating by style property:</h2>
+                <ol class="list-decimal pl-1 lg:px-10">
+                  <li>Setting Style:
+                    <ul class="list-disc pl-1 lg:px-5">
+                      <li>element.style.backgroundColor ="colorName";</li>
+                      <li>element.style.color ="colorName";</li>
+                      <li>element.style.fontSize ="value";</li>
+                    </ul>
+                  </li>
+    
+                  <li> RemovingStyle:
+                    <ul class="list-disc pl-1 lg:px-5">
+                      <li>element.style.stylingProperty = "";</li>
+                      <li>example: element.style.color="";</li>
+                    </ul>
+                  </li>
+    
+                  <li>Adding CSS Classes:
+                    <ul class="list-disc pl-1 lg:px-5">
+                      <li>element.ClassName.add("className);</li>
+                      <li>element.ClassName.remove("className);</li>
+                      <li>element.ClassName.toggle("active);</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer class="menu-box mt-8 w-full bg-[#F9F7F3] h-24"></footer>
     <script src="js/utility.js"></script>
