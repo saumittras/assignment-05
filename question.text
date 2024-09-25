@@ -43,3 +43,11 @@ element.ClassName.toggle("active);
 What is event delegation in the context of the DOM?
 The event delegation is a special technique in the javascript DOM to listiening from multiple child element of a parent elemnt. In this technique an event listener is add on a parent element rather than added individual listner  
 to all child elements. when an event occure on a child element, a trigger event produce to event listner and bubble up to parent element. 
+
+ why event delegation is useful?
+
+ Event delegation is useful for several reasons: 
+ 1. Event delegation technique reduce using event listener rather than useing multiple event handler on all child elements. That why its memory efficent and it increase performance.
+ 2. In Event delegation, makeing code are cleaner, easierr and minimizes boiler plate.
+ 3. In this technique an event listener is use on parent so no need to add extra code when adeed an extra or more child element.
+ 4. It improve flixibility so improve UI exprience in complex case.etc 

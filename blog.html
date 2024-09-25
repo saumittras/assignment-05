@@ -154,7 +154,13 @@
                 <p class="text-justify">
                   Event delegation is a special technique in the JavaScript DOM that allows you to listen for events from multiple child elements of a parent element. Instead of adding individual event listeners to each child element, you attach a single event listener to the parent element. When an event occurs on a child element, it triggers an event that bubbles up to the parent element's listener.
                 </p>
-                <p></p>
+                <p>Event delegation is useful for several reasons:</p>
+                <ul class="list-decimal pl-1 lg:px-10">
+                  <li class=" pl-1 lg:px-5">The event delegation technique reduces the need for multiple event handlers on all child elements, making it more memory-efficient and improving performance.</li>
+                  <li class="pl-1 lg:px-5">With event delegation, code is cleaner, easier to read, and minimizes boilerplate.</li>
+                  <li class="pl-1 lg:px-5">In this technique, an event listener is used on the parent, so there’s no need to add extra code when additional child elements are added.</li>
+                  <li class="pl-1 lg:px-5">It improves flexibility, enhancing the user experience in complex scenarios.</li>
+                </ul>
               </div>
             </div>
           </div>
