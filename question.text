@@ -39,3 +39,7 @@ Adding CSS Classes:
 element.ClassName.add("className);
 element.ClassName.remove("className);
 element.ClassName.toggle("active);
+
+What is event delegation in the context of the DOM?
+The event delegation is a special technique in the javascript DOM to listiening from multiple child element of a parent elemnt. In this technique an event listener is add on a parent element rather than added individual listner  
+to all child elements. when an event occure on a child element, a trigger event produce to event listner and bubble up to parent element. 
